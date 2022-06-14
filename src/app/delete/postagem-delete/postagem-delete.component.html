@@ -1,0 +1,17 @@
+<div class="container-fluid my-5">
+  <div class="container">
+    <h3 class="text-center">Apagar postagem</h3>
+
+    <div class="row d-flex flex-column align-items-center">
+      <p class="text-center">Você tem certeza de que deseja apagar essa postagem?</p>
+      <div class="col-md-6 border border-dark rounded">
+        <strong>{{postagem.titulo}}</strong>
+
+        <div class="d-flex justify-content-around my-3">
+          <button class="btn btn-dark" routerLink="/inicio">Cancelar</button>
+          <button class="btn btn-danger" (click)="deletarPostagem()">Apagar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

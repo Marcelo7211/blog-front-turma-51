@@ -1,0 +1,45 @@
+<div class="container-fluid" id="imgBg">
+  <div class="row my-auto w-100">
+    <div class="col-md-12 d-flex flex-column justify-content-center">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-4 glass p-5 text-light">
+          <p class="text-center h1">CADASTRAR</p>
+          <form>
+            <div class="form-group">
+              <label for="">Nome</label>
+              <input type="text" class="form-control" name="nome" [(ngModel)]="usuario.nome">
+            </div>
+            <div class="form-group">
+              <label for="">Email</label>
+              <input type="email" class="form-control" name="email" [(ngModel)]="usuario.usuario">
+            </div>
+            <div class="form-group">
+              <label for="">Foto</label>
+              <input type="text" class="form-control" name="imagem" [(ngModel)]="usuario.foto">
+            </div>
+            <div class="form-group">
+              <label for="">Senha</label>
+              <input type="password" class="form-control" name="senha" (input)="confirmSenha($event)">
+            </div>
+            <div class="form-group">
+              <label for="">Confirmar Senha</label>
+              <input type="password" class="form-control" name="confirmarSenha" [(ngModel)]="usuario.senha">
+            </div>
+            <div class="form-group">
+              <label for="">Tipo de usuário</label>
+              <select name="tipo" id="" class="form-control" (change)="tipoUser($event)">
+                <option value="" selected disabled>Selecione o tipo de usuario</option>
+                <option value="admin">Administrador</option>
+                <option value="padrao">Padrão</option>
+              </select>
+            </div>
+            <div class="d-flex justify-content-around">
+              <button class="btn btn-danger w-33" routerLink="/entrar">Cancelar</button>
+              <button class="btn btn-outline-light w-33" (click)="cadastrar()">Cadastrar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

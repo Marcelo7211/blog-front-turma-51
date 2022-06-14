@@ -1,0 +1,10 @@
+.texto {
+  font-size: 3rem;
+}
+
+.destaque {
+  font-size: 4rem;
+  font-family: "Merienda", cursive;
+  text-transform: uppercase;
+  color: #bec4d4;
+}

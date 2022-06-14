@@ -1,0 +1,21 @@
+<div class="container-fluid">
+  <div class="container my-5">
+    <h1 class="text-center">Editar tema</h1>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form>
+          <div class="form-group">
+            <label for="">Descrição do tema</label>
+            <input type="text" name="tema" id="tema" [(ngModel)]="tema.descricao" class="form-control">
+          </div>
+
+          <div class="d-flex justify-content-around">
+            <button class="btn btn-danger w-25" routerLink='/temas'>Cancelar</button>
+            <button class="btn btn-success w-25" (click)="editarTema()">Editar tema</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>

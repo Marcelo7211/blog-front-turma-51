@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-fundo">
+  <a class="navbar-brand" href="#">
+    <img
+      src="https://github.com/tjfaccipieri.png"
+      alt=""
+      width="50"
+      class="rounded-circle"
+    />
+  </a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link h4 m-0" [routerLink]="['/usuarioEdit', id]"
+          >Thiago Faccipieri
+          <i class="fa fa-address-card-o text-muted ml-2" aria-hidden="true" ></i>
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="d-flex align-items-center">
+      <a class="m-0 text-light h5 text-decoration-none" (click)="sair()">Sair <i class="fa fa-sign-out" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</nav>

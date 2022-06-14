@@ -1,0 +1,23 @@
+#imgBg {
+  background-color: #020a22;
+    background-image:
+        radial-gradient(at 47% 33%, rgb(60, 136, 163) 0, transparent 59%),
+        radial-gradient(at 82% 65%, hsl(217.78, 90%, 28.999999999999996%) 0, transparent 55%);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.glass {
+  backdrop-filter: blur(16px) saturate(190%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(4, 49, 59, 0.75);
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.125);
+}
+
+.w-33 {
+  width: 33%
+}

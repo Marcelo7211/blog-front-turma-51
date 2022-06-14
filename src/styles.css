@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+
+:root {
+  --bg-padrao: #142866;
+  --bg-fundo: #020a22
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.bg-padrao {
+  background-color: var(--bg-padrao)
+}
+
+.bg-fundo {
+  background-color: var(--bg-fundo)
+}
+
+.txt-padrao {
+  color: var(--bg-padrao)
+}

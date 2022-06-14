@@ -1,0 +1,16 @@
+<div class="container-fluid">
+  <div class="container my-5">
+    <h1 class="text-center">Apagar tema</h1>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <p class="text-center">Você tem certeza de que deseja apagar o tema: <span class="h5">{{tema.descricao}}</span> ?</p>
+        <p class="text-center">Todas as postagens relacionadas ao tema, serão apagadas.</p>
+
+        <div class="d-flex justify-content-around">
+          <button class="btn btn-dark w-25" routerLink="/temas">Cancelar</button>
+          <button class="btn btn-danger w-25" (click)="deletarTema()">Apagar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
